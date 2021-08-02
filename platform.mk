@@ -48,6 +48,7 @@ TARGET_USE_CUSTOM_POWERHINT ?= false
 include $(PLATFORM_PATH)/platform/*.mk
 
 ### VERITY
+WITH_VERITY := false
 ifeq ($(WITH_VERITY),true)
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/vendor

@@ -151,9 +151,6 @@ on post-fs
     # Trigger loading of ipa firmware
     write /dev/ipa 1
 
-    # Update dm-verity state and set partition.*.verified properties
-    verity_update_state
-
     # SONY: Switch the modem if needed
     start modem_switcher
 
